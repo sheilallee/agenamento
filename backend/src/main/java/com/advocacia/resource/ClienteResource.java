@@ -1,12 +1,21 @@
 package com.advocacia.resource;
 
+import java.util.List;
+
 import com.advocacia.entity.Cliente;
+
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
-import jakarta.ws.rs.*;
+import jakarta.ws.rs.Consumes;
+import jakarta.ws.rs.DELETE;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.POST;
+import jakarta.ws.rs.PUT;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.PathParam;
+import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
-import java.util.List;
 
 /**
  * Resource REST para gerenciar Clientes
@@ -87,6 +96,7 @@ public class ClienteResource {
         cliente.email = clienteAtualizado.email;
         cliente.telefone = clienteAtualizado.telefone;
         cliente.cpf = clienteAtualizado.cpf;
+        cliente.endereco = clienteAtualizado.endereco;
         
         return Response.ok(cliente).build();
     }

@@ -44,15 +44,21 @@ public class Cliente extends PanacheEntity {
     @NotBlank(message = "CPF é obrigatório")
     public String cpf;
     
+    /**
+     * Endereço do cliente (opcional)
+     */
+    public String endereco;
+    
     // Construtor padrão necessário para JPA
     public Cliente() {
     }
     
     // Construtor com parâmetros para facilitar criação
-    public Cliente(String nome, String email, String telefone, String cpf) {
+    public Cliente(String nome, String email, String telefone, String cpf, String endereco) {
         this.nome = nome;
         this.email = email;
         this.telefone = telefone;
         this.cpf = cpf;
+        this.endereco = endereco;
     }
 }

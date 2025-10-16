@@ -40,15 +40,22 @@ public class Advogado extends PanacheEntity {
     @NotBlank(message = "Email é obrigatório")
     public String email;
     
+    /**
+     * Telefone do advogado
+     */
+    @NotBlank(message = "Telefone é obrigatório")
+    public String telefone;
+    
     // Construtor padrão
     public Advogado() {
     }
     
     // Construtor com parâmetros
-    public Advogado(String nome, String oab, String especialidade, String email) {
+    public Advogado(String nome, String oab, String especialidade, String email, String telefone) {
         this.nome = nome;
         this.oab = oab;
         this.especialidade = especialidade;
         this.email = email;
+        this.telefone = telefone;
     }
 }
