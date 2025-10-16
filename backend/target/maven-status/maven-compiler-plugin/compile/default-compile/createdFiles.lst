@@ -1,0 +1,7 @@
+com\advocacia\entity\Advogado.class
+com\advocacia\resource\AgendamentoResource.class
+com\advocacia\entity\Agendamento.class
+com\advocacia\entity\Agendamento$StatusAgendamento.class
+com\advocacia\entity\Cliente.class
+com\advocacia\resource\ClienteResource.class
+com\advocacia\resource\AdvogadoResource.class
