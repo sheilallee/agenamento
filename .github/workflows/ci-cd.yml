@@ -32,12 +32,12 @@ jobs:
       - name: Build backend
         run: |
           cd backend
-          ./mvnw package -DskipTests
+          mvn package -DskipTests
 
       - name: Test backend
         run: |
           cd backend
-          ./mvnw test
+          mvn test
 
       - name: Build frontend
         run: |
