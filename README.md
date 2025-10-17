@@ -1,4 +1,4 @@
-# Sistema de Advocacia - Full Stack
+# Sistema de Agendamentos 
 
 ## 📋 Visão Geral
 
